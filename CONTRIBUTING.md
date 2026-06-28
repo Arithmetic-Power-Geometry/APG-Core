@@ -1,0 +1,6 @@
+Bug reports
+Mathematical discussions
+Proof verification
+Software implementation
+Documentation
+Applications
