@@ -164,10 +164,10 @@ The framework is under active research and development. Updates, new theoretical
 
 ## Copyright
 
-**Copyright © 2026 Mohammad Amir Khusru Akhtar. All rights reserved.**
+**Copyright © 2026 Mohammad Amir Khusru Akhtar. \\ All rights reserved.**
 
 The original concepts, mathematical formulations, theoretical developments, and accompanying documentation of the **Arithmetic Power Geometry (APG)** framework are the intellectual property of the author.
 
-Academic use is encouraged under the terms of the repository license. For commercial licensing, enterprise collaboration, consulting, or research partnerships, please contact:
+This repository is distributed under the accompanying license. For commercial licensing, enterprise collaboration, consulting, or research partnerships, please contact the author.
 
 📧 **akakhtar.2024@gmail.com**
