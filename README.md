@@ -2,7 +2,7 @@
 
 **Author:** Dr. Mohammad Amir Khusru Akhtar  
 **Institution:** Faculty of Computing and Information Technology, Usha Martin University, Ranchi – 834001, Jharkhand, India  
-**Correspondence Desk:** akakhtar.2024@gmail.com | amir@umu.ac.in  
+**Correspondence Desk:** akakhtar.2024@gmail.com | akru2008@gmail.com 
 
 ---
 
@@ -41,7 +41,9 @@ The explicit manifestation of closure depends entirely on the chosen background 
 $$\mathcal{U} \in \{\mathbb{Z}^+, \mathbb{Q}^+, \mathbb{R}^+, \mathbb{C}\}$$
 
 The binary evaluation mapping is formalized as:
+
 $$\text{Closure}_{\mathcal{U}}(E) = \begin{cases} 1, & \text{if } E \text{ closes perfectly inside } \mathcal{U} \\ 0, & \text{if } E \text{ fails to close inside } \mathcal{U} \end{cases}$$
+
 
 ### Axiom 4. The Normalized Closure Defect, $d_P$
 The Power-Deformation Space $\mathcal{P}(a, b)$ is endowed with a localized closure-defect functional that quantifies relative departure from exact closure. For any point $(c, n) \in \mathcal{P}(a, b)$, the functional is defined as:
