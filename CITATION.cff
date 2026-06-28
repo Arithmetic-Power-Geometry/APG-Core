@@ -1,0 +1,46 @@
+```yaml
+cff-version: 1.2.0
+title: "Arithmetic Power Geometry (APG)"
+message: "If you use this repository, please cite it using the metadata below."
+type: software
+
+authors:
+  - family-names: "Akhtar"
+    given-names: "Mohammad Amir Khusru"
+
+repository-code: "https://github.com/Arithmetic-Power-Geometry/APG-Core"
+
+abstract: >
+  Arithmetic Power Geometry (APG) is a mathematical framework for studying
+  structural deformation under continuous exponent variation. The framework
+  introduces the Power-Deformation Space, Local Closure Defect,
+  entropy-governed deformation laws, and interpretable descriptors for
+  applications in mathematics, artificial intelligence, optimization,
+  anomaly detection, materials discovery, and scientific machine learning.
+
+keywords:
+  - Arithmetic Power Geometry
+  - APG
+  - Mathematics
+  - Information Geometry
+  - Entropy
+  - Optimization
+  - Artificial Intelligence
+  - Out-of-Distribution Detection
+  - Scientific Machine Learning
+
+license: GPL-3.0-or-later
+
+version: "1.0.0"
+
+date-released: 2026-06-28
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Akhtar"
+      given-names: "Mohammad Amir Khusru"
+  title: "Arithmetic Power Geometry: Foundations, Principles, Applications, and Future Directions"
+  year: 2026
+  doi: 10.5281/zenodo.20972005
+```
