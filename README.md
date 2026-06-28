@@ -8,11 +8,11 @@
 
 ## 📚 Official Literature & Zenodo Archive Links
 
-* **Primary Tutorial Framework Manuscript (APG I):**  
-  [Arithmetic Power Geometry: Foundations, Principles, Applications, and Future Directions (DOI: 10.5281/zenodo.20970528)](https://doi.org)
+* **Primary Tutorial Framework Manuscript (APG):**  
+  [Arithmetic Power Geometry: Foundations, Principles, Applications, and Future Directions (https://doi.org/10.5281/zenodo.20972005)
 
-* **Foundational Theoretical Formulation (APG II):**  
-  [Foundations of Arithmetic Power Geometry: Local Parameter Deformations and Entropy at the Euclidean Target (DOI: 10.5281/zenodo.20747768)](https://doi.org)
+* **Foundational Theoretical Formulation (APG I):**  
+  [Foundations of Arithmetic Power Geometry: Local Parameter Deformations and Entropy at the Euclidean Target (https://doi.org/10.5281/zenodo.20747768)
 
 ---
 
@@ -142,3 +142,7 @@ The low residual error values confirm the validity of the first-order expansion 
 | 0.05 | 2.05 | 0.01618 | 0.01634 | 0.00016 |
 | 0.10 | 2.10 | 0.03205 | 0.03267 | 0.00062 |
 | 0.20 | 2.20 | 0.06290 | 0.06534 | 0.00244 |
+
+Maintained by the Founder of Arithmetic Power Geometry, Dr. Mohammad Amir Khusru Akhtar.
+Copyright
+Copyright (C) 2026 Mohammad Amir Khusru Akhtar
