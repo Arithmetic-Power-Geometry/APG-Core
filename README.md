@@ -6,6 +6,16 @@
 
 ---
 
+## 📚 Official Literature & Zenodo Archive Links
+
+* **Primary Tutorial Framework Manuscript (APG I):**  
+  [Arithmetic Power Geometry: Foundations, Principles, Applications, and Future Directions (DOI: 10.5281/zenodo.20970528)](https://doi.org)
+
+* **Foundational Theoretical Formulation (APG II):**  
+  [Foundations of Arithmetic Power Geometry: Local Parameter Deformations and Entropy at the Euclidean Target (DOI: 10.5281/zenodo.20747768)](https://doi.org)
+
+---
+
 ## ⚖️ Intellectual Property, Copyleft Enforcement & Commercial Terms
 
 1. **Academic Evaluation & Licensing:** All algorithmic paradigms, workflows, and mathematical representations outlined here are tracked under the **GNU General Public License v3.0 (GPL v3.0)** or later. Any code, software modules, or derivative automation engines executing these steps must remain 100% open-source under identical license terms.
@@ -40,11 +50,11 @@ $$a^n + b^n = c^n$$
 The explicit manifestation of closure depends entirely on the chosen background algebraic universe $\mathcal{U}$, where:
 $$\mathcal{U} \in \{\mathbb{Z}^+, \mathbb{Q}^+, \mathbb{R}^+, \mathbb{C}\}$$
 
-The binary evaluation mapping is formalized with double backslashes for proper row rendering on GitHub:
+The binary evaluation mapping is formalized as:
 $$\text{Closure}_{\mathcal{U}}(E) = \begin{cases} 1, & \text{if } E \text{ closes perfectly inside } \mathcal{U} \\ 0, & \text{if } E \text{ fails to close inside } \mathcal{U} \end{cases}$$
 
 ### Axiom 4. The Normalized Closure Defect, $d_P$
-The Power-Deformation Space $\mathcal{P}(a, b)$ is endowed with a localized closure-defect functional that quantifies relative departure from exact closure. For any point $(c, n) \in \mathcal{P}(a, b)$, the functional is defined as:
+The Power-Deformation Space $\mathcal{P}(a, b)$ is endowed with a localized closure-defect functional that quantifies relative departure from exact closure. For any point $(c, n) \in $\mathcal{P}(a, b)$, the functional is defined as:
 $$d_P(c, n) = \frac{|c^n - a^n - b^n|}{c^n}$$
 
 Where $d_P(c, n) = 0$ represents an unobstructed configuration. The functional measures relative departure and shares structural behavior with error functionals in Diophantine approximation theory.
@@ -93,7 +103,7 @@ By invoking the classical exponential identity $x^y = \exp(y \ln x)$, we express
 $$\frac{a^{2+K_P}}{(a^2 + b^2)^{(2+K_P)/2}} = \frac{a^2}{a^2 + b^2} \left( \frac{a}{\sqrt{a^2 + b^2}} \right)^{K_P} = w_a \exp\left[ \frac{K_P}{2} \ln w_a \right]$$
 
 Applying this exact identity transform to the concurrent $b$-component yields the expanded Local Closure Defect expression:
-$$\delta_K = \left| 1 - \left[ w_a \exp\left( \frac{K_P}{2} \ln w_a \right) + w_b \exp\left( \frac{K_P}{2} \ln w_b \right) \right] \right|$$
+$$\delta_K = \left| 1 - \left[ w_a \exp\left( \frac{K_P}{2} \ln w_a \right) + w_b \exp\left( \frac{K_P}{2} \ln w_b \right) \right| \right|$$
 
 We expand the exponential operators about the Euclidean baseline coordinate $K_P = 0$ via standard Maclaurin series expansion $\exp(x) = 1 + x + O(x^2)$:
 $$\exp\left[ \frac{K_P}{2} \ln w_a \right] = 1 + \frac{K_P}{2} \ln w_a + O(K_P^2)$$
@@ -117,8 +127,8 @@ $$\delta_K = \frac{H(W)}{2}|K_P| + O(K_P^2) \quad \blacksquare$$
 
 Numerical verification computed at coordinate anchors $(a, b) = (3, 4)$ confirms the tracking accuracy of the local first-order entropy expansion theorem:
 
-* **Calculated Ground Truth Entropy ($H(W)$):** 0.65342 nats
-* **Euclidean Target Baseline Reference ($c_2$):** $\sqrt{3^2 + 4^2} = 5.0$
+* **Calculated Ground Truth Entropy $H(W)$:** 0.65342 nats
+* **Euclidean Target Baseline Reference $c_2$:** $\sqrt{3^2 + 4^2} = 5.0$
 
 ### Quantitative Approximation Accuracy Profile
 The low residual error values confirm the validity of the first-order expansion under micro-deformations ($K_P \to 0$):
