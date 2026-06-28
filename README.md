@@ -13,5 +13,5 @@ This repository serves as the global intellectual anchor point for all current a
 ## 📨 Corporate Inquiries & Consultations
 For commercial engineering licenses, custom corporate workshops, or technical advisory requests, please reach out via the official channels below:
 * **Founder:** Dr. Mohammad Amir Khusru Akhtar
-* **Inquiry Desk:** amir@umu.ac.in
+* **Inquiry Desk:** akakhtar.2024@gmail.com
 * **Institutional Alignment:** Faculty of Computing and Information Technology, Usha Martin University
