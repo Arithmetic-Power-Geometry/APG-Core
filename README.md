@@ -51,7 +51,13 @@ The explicit manifestation of closure depends entirely on the chosen background 
 $$\mathcal{U} \in \{\mathbb{Z}^+, \mathbb{Q}^+, \mathbb{R}^+, \mathbb{C}\}$$
 
 The binary evaluation mapping is formalized as:
-$$\text{Closure}_{\mathcal{U}}(E) = \begin{cases} 1, & \text{if } E \text{ closes perfectly inside } \mathcal{U} \\ 0, & \text{if } E \text{ fails to close inside } \mathcal{U} \end{cases}$$
+$$
+\text{Closure}_{\mathcal{U}}(E)=
+\begin{cases}
+1, & \text{if } E \text{ closes perfectly inside } \mathcal{U},\\
+0, & \text{if } E \text{ fails to close inside } \mathcal{U}.
+\end{cases}
+$$
 
 ### Axiom 4. The Normalized Closure Defect, $d_P$
 The Power-Deformation Space $\mathcal{P}(a, b)$ is endowed with a localized closure-defect functional that quantifies relative departure from exact closure. For any point $(c, n) \in $\mathcal{P}(a, b)$, the functional is defined as:
@@ -143,6 +149,24 @@ The low residual error values confirm the validity of the first-order expansion 
 | 0.10 | 2.10 | 0.03205 | 0.03267 | 0.00062 |
 | 0.20 | 2.20 | 0.06290 | 0.06534 | 0.00244 |
 
-Maintained by the Founder of Arithmetic Power Geometry, Dr. Mohammad Amir Khusru Akhtar.
-Copyright
-Copyright (C) 2026 Mohammad Amir Khusru Akhtar
+---
+
+## Maintained by
+
+**Arithmetic Power Geometry (APG)** is maintained by its founder,
+
+**Dr. Mohammad Amir Khusru Akhtar**
+
+The framework is under active research and development. Updates, new theoretical results, applications, and reference implementations will be added as the project evolves.
+
+---
+
+## Copyright
+
+**Copyright © 2026 Mohammad Amir Khusru Akhtar. All rights reserved.**
+
+The original concepts, mathematical formulations, theoretical developments, and accompanying documentation of the **Arithmetic Power Geometry (APG)** framework are the intellectual property of the author.
+
+Academic use is encouraged under the terms of the repository license. For commercial licensing, enterprise collaboration, consulting, or research partnerships, please contact:
+
+📧 **akakhtar.2024@gmail.com**
