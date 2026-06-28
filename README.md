@@ -2,7 +2,7 @@
 
 **Author:** Dr. Mohammad Amir Khusru Akhtar  
 **Institution:** Faculty of Computing and Information Technology, Usha Martin University, Ranchi – 834001, Jharkhand, India  
-**Correspondence Desk:** akakhtar.2024@gmail.com | akru2008@gmail.com 
+**Correspondence Desk:** akakhtar.2024@gmail.com | akru2008@gmail.com  
 
 ---
 
@@ -27,7 +27,7 @@ Traditional mathematics investigates fixed-exponent polynomial systems (such as 
 To establish a formal analytic environment for exponent-deformation modeling, the background space is governed by five core axioms:
 
 ### Axiom 1. The Power-Deformation Space, $\mathcal{P}(a, b)$
-For any fixed positive real base coordinates $(a, b) \in (\mathbb{R}^+)^2$, there exists a localized, continuous two-dimensional parameter space called the Power-Deformation Space, defined as:
+For any fixed positive real base coordinates $(a, b) \in (\mathbb{R}^+)^2$, there exists a localized, continuous two-dimensional parameter space called the Power-Deformation Space, denoted by $\mathcal{P}(a, b)$ and defined as:
 $$\mathcal{P}(a, b) = \{(c, n) \in \mathbb{R}^+ \times \mathbb{R}^+ : c > 0, n > 0\}$$
 
 A discrete coordinate pair $(c, n) \in \mathcal{P}(a, b)$ characterizes a target scalar coordinate $c$ evaluated under a continuous exponent deformation parameter $n$.
@@ -40,10 +40,8 @@ $$a^n + b^n = c^n$$
 The explicit manifestation of closure depends entirely on the chosen background algebraic universe $\mathcal{U}$, where:
 $$\mathcal{U} \in \{\mathbb{Z}^+, \mathbb{Q}^+, \mathbb{R}^+, \mathbb{C}\}$$
 
-The binary evaluation mapping is formalized as:
-
+The binary evaluation mapping is formalized with double backslashes for proper row rendering on GitHub:
 $$\text{Closure}_{\mathcal{U}}(E) = \begin{cases} 1, & \text{if } E \text{ closes perfectly inside } \mathcal{U} \\ 0, & \text{if } E \text{ fails to close inside } \mathcal{U} \end{cases}$$
-
 
 ### Axiom 4. The Normalized Closure Defect, $d_P$
 The Power-Deformation Space $\mathcal{P}(a, b)$ is endowed with a localized closure-defect functional that quantifies relative departure from exact closure. For any point $(c, n) \in \mathcal{P}(a, b)$, the functional is defined as:
@@ -134,10 +132,3 @@ The low residual error values confirm the validity of the first-order expansion 
 | 0.05 | 2.05 | 0.01618 | 0.01634 | 0.00016 |
 | 0.10 | 2.10 | 0.03205 | 0.03267 | 0.00062 |
 | 0.20 | 2.20 | 0.06290 | 0.06534 | 0.00244 |
-
----
-
-## 6. Formal Scope and Analytical Boundaries
-
-To preserve mathematical clarity, the structural bounds of APG are explicitly defined:
-
