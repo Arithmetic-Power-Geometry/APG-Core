@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.jpg" alt="Arithmetic Power Geometry" width="100%">
+</p>
+
 # Arithmetic Power Geometry (APG): Foundations, Principles, Applications, and Future Directions
 
 **Author:** Dr. Mohammad Amir Khusru Akhtar  
