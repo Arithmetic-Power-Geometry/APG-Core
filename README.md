@@ -51,10 +51,11 @@ The explicit manifestation of closure depends entirely on the chosen background 
 $$\mathcal{U} \in \{\mathbb{Z}^+, \mathbb{Q}^+, \mathbb{R}^+, \mathbb{C}\}$$
 
 The binary evaluation mapping is formalized as:
+
 $$
 \text{Closure}_{\mathcal{U}}(E)=
 \begin{cases}
-1, & \text{if } E \text{ closes perfectly inside } \mathcal{U},\\
+1, & \text{if } E \text{ closes perfectly inside } \mathcal{U}, \\
 0, & \text{if } E \text{ fails to close inside } \mathcal{U}.
 \end{cases}
 $$
