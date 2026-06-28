@@ -2,7 +2,9 @@
   <img src="banner.jpg" alt="Arithmetic Power Geometry" width="100%">
 </p>
 
-# Arithmetic Power Geometry (APG): Foundations, Principles, Applications, and Future Directions
+# Arithmetic Power Geometry (APG)
+
+> **Arithmetic Power Geometry (APG) is a mathematical framework for studying structural deformation under continuous exponent variation.**
 
 **Author:** Dr. Mohammad Amir Khusru Akhtar  
 **Institution:** Faculty of Computing and Information Technology, Usha Martin University, Ranchi – 834001, Jharkhand, India  
