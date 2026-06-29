@@ -1,0 +1,14 @@
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+apg_core/__init__.py
+apg_core/cli.py
+apg_core/descriptors.py
+apg_core.egg-info/PKG-INFO
+apg_core.egg-info/SOURCES.txt
+apg_core.egg-info/dependency_links.txt
+apg_core.egg-info/entry_points.txt
+apg_core.egg-info/requires.txt
+apg_core.egg-info/top_level.txt
+tests/test_descriptors.py

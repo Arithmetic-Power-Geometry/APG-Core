@@ -1,0 +1,2 @@
+[console_scripts]
+apg-core = apg_core.cli:main
