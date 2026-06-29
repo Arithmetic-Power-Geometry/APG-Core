@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "APG-Core: Core Computational Descriptors for Arithmetic Power Geometry"
+message: "If you use APG-Core, please cite this software and the Arithmetic Power Geometry framework."
+type: software
+authors:
+  - family-names: "Akhtar"
+    given-names: "Mohammad Amir Khusru"
+    email: "akakhtar.2024@gmail.com"
+version: "1.0.0"
+date-released: "2026-06-29"
+license: "GPL-3.0-or-later"
+repository-code: "https://github.com/Arithmetic-Power-Geometry/APG-Core"
+keywords:
+  - "Arithmetic Power Geometry"
+  - "APG"
+  - "Shannon entropy"
+  - "Renyi entropy"
+  - "power defect"
+  - "information geometry"
+  - "interpretable AI"
+abstract: "APG-Core implements the core computational descriptors of Arithmetic Power Geometry, including squared Euclidean weights, Shannon entropy, concentration, power defects, Shannon--Renyi control bounds, and local closure-defect approximations."
+preferred-citation:
+  type: software
+  title: "APG-Core: Core Computational Descriptors for Arithmetic Power Geometry"
+  authors:
+    - family-names: "Akhtar"
+      given-names: "Mohammad Amir Khusru"
+  year: 2026
+  version: "1.0.0"
+  repository-code: "https://github.com/Arithmetic-Power-Geometry/APG-Core"
+  license: "GPL-3.0-or-later"

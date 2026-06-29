@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apg-core"
+version = "1.0.0"
+description = "Core computational descriptors for Arithmetic Power Geometry (APG)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+  {name = "Dr. Mohammad Amir Khusru Akhtar", email = "akakhtar.2024@gmail.com"}
+]
+maintainers = [
+  {name = "Dr. Mohammad Amir Khusru Akhtar", email = "akakhtar.2024@gmail.com"}
+]
+keywords = [
+  "Arithmetic Power Geometry",
+  "APG",
+  "entropy",
+  "Renyi entropy",
+  "Shannon entropy",
+  "concentration",
+  "power defect",
+  "out-of-distribution detection",
+  "interpretable AI",
+  "mathematical descriptors"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "build>=1.0", "twine>=4.0"]
+
+[project.urls]
+Homepage = "https://github.com/Arithmetic-Power-Geometry/APG-Core"
+Repository = "https://github.com/Arithmetic-Power-Geometry/APG-Core"
+Issues = "https://github.com/Arithmetic-Power-Geometry/APG-Core/issues"
+Documentation = "https://github.com/Arithmetic-Power-Geometry/APG-Core#readme"
+
+[project.scripts]
+apg-core = "apg_core.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["apg_core*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
