@@ -1,0 +1,208 @@
+# APG-Core
+
+**APG-Core** is the reference Python package for the core computational descriptors of **Arithmetic Power Geometry (APG)**.
+
+Arithmetic Power Geometry (APG) is a mathematical framework for studying **structural deformation under continuous exponent variation**. This package implements the reusable descriptor layer used across APG theory and applications, including entropy, concentration, power-defect, Shannon--Rényi bounds, and local closure-defect calculations.
+
+**Author:** Dr. Mohammad Amir Khusru Akhtar  
+**Contact:** akakhtar.2024@gmail.com  
+**License:** GPL-3.0-or-later
+
+---
+
+## Why this package exists
+
+APG papers introduce a family of mathematical descriptors that can be reused in many domains:
+
+- arithmetic deformation theory,
+- information geometry,
+- anomaly detection,
+- out-of-distribution screening,
+- adaptive metric search,
+- materials discovery,
+- financial fraud and blockchain transaction analysis.
+
+This repository gives researchers a clean, citable, runnable reference implementation.
+
+---
+
+## Installation
+
+From GitHub source:
+
+```bash
+git clone https://github.com/Arithmetic-Power-Geometry/APG-Core.git
+cd APG-Core
+python -m pip install -e .
+```
+
+For development and testing:
+
+```bash
+python -m pip install -e ".[dev]"
+pytest
+```
+
+---
+
+## Quick start
+
+```python
+from apg_core import descriptor_summary
+
+x = [3, 4]
+summary = descriptor_summary(x, exponents=[2.5, 3, 4])
+print(summary)
+```
+
+Expected output contains:
+
+```text
+weights
+entropy
+normalized_entropy
+concentration
+D_2.5
+D_3
+D_4
+upper/lower/linear bounds
+```
+
+---
+
+## Command line usage
+
+Describe a vector:
+
+```bash
+apg-core describe 3 4 --exponents 2.5 3 4
+```
+
+Compute the APG local closure defect near the Euclidean target:
+
+```bash
+apg-core local 3 4 2.1
+```
+
+---
+
+## Core APG formulas implemented
+
+### 1. Squared Euclidean weights
+
+For a positive vector \(X=(x_1,\ldots,x_m)\), APG defines:
+
+\[
+w_i = \frac{x_i^2}{\sum_j x_j^2}.
+\]
+
+### 2. Shannon entropy
+
+\[
+H(W) = -\sum_i w_i \log w_i.
+\]
+
+### 3. APG concentration
+
+\[
+C_{APG}(W)=\max_i w_i.
+\]
+
+### 4. Multi-variable APG power defect
+
+For \(t\ge 2\):
+
+\[
+D_m(t)=1-\sum_i w_i^{t/2}.
+\]
+
+### 5. Shannon--Rényi upper bound
+
+\[
+D_m(t) \le 1-\exp\left(-\frac{t-2}{2}H(W)\right)
+\le \frac{t-2}{2}H(W).
+\]
+
+### 6. Concentration lower bound
+
+\[
+D_m(t) \ge 1-M^{(t-2)/2},\quad M=\max_i w_i.
+\]
+
+### 7. Two-coordinate local closure defect
+
+Let \(a,b>0\), \(c_2=\sqrt{a^2+b^2}\), and exponent \(n\). APG computes:
+
+\[
+\delta_K(a,b;n)=\left|1-\frac{a^n+b^n}{(a^2+b^2)^{n/2}}\right|.
+\]
+
+Near \(n=2\):
+
+\[
+\delta_K = \frac{H(W)}{2}|n-2| + O((n-2)^2).
+\]
+
+---
+
+## Example: validating the APG local first-order law
+
+```python
+from apg_core import local_closure_defect, local_first_order_approximation
+
+for n in [1.9, 1.95, 2.0, 2.05, 2.1]:
+    exact = local_closure_defect(3, 4, n)
+    approx = local_first_order_approximation(3, 4, n)
+    print(n, exact, approx, abs(exact - approx))
+```
+
+---
+
+## Citation
+
+If you use this package, cite the APG framework and this software repository.
+
+Recommended citation:
+
+> Akhtar, M. A. K. (2026). APG-Core: Core Computational Descriptors for Arithmetic Power Geometry. GitHub/Zenodo. GPL-3.0-or-later.
+
+See [`CITATION.cff`](CITATION.cff).
+
+---
+
+## Intellectual property and license
+
+This software implementation is released under **GPL-3.0-or-later**.
+
+The package is intended to establish a transparent, citable, open-source reference implementation of the APG descriptor layer. Any derivative software using this implementation must comply with the GPL terms.
+
+For commercial licensing, enterprise collaboration, consulting, or closed-source permission, contact:
+
+**akakhtar.2024@gmail.com**
+
+---
+
+## Repository structure
+
+```text
+apg-core/
+├── apg_core/
+│   ├── __init__.py
+│   ├── cli.py
+│   └── descriptors.py
+├── examples/
+│   ├── basic_usage.py
+│   └── local_defect_validation.py
+├── tests/
+│   └── test_descriptors.py
+├── docs/
+│   └── FORMULAS.md
+├── pyproject.toml
+├── README.md
+├── CITATION.cff
+├── LICENSE
+├── NOTICE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+└── SECURITY.md
+```
