@@ -1,0 +1,17 @@
+name: Online Logistic Regret Lab
+on:
+  workflow_dispatch:
+  push:
+    branches: [online-logistic-regret-lab]
+    paths:
+      - "labs/online-logistic-regret/**"
+jobs:
+  falsification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy
+      - run: python labs/online-logistic-regret/experiments/adversarial_1d.py --T 100 300 1000 --B 5 --trials 200
